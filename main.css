@@ -40,8 +40,9 @@ p {
     color: #000;
     background: #fff;
 }
-.navbar-light .navbar-nav .active >.nav-link:hover{
-    color:#000;
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+    color: #000;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -191,21 +192,23 @@ p {
 
 }
 
-.sec2{
+.sec2 {
     position: relative;
     background: url(images/banner2.jpg);
     background-size: cover;
     height: 100vh;
 }
-.sec2 h2{
+
+.sec2 h2 {
     font-weight: 800;
-    color:#fff;
-    text-transform:uppercase;
+    color: #fff;
+    text-transform: uppercase;
     font-size: 4.5rem;
 }
-.btnD1{
+
+.btnD1 {
     border: 2px solid #fff;
-    color:#000;
+    color: #000;
     background: #fff;
     border-radius: 50px;
     padding: 15px 50px;
@@ -214,32 +217,36 @@ p {
     font-weight: 500;
     margin-top: 20px;
 }
-.blog{
+
+.blog {
     position: relative;
     width: 100%;
     background: #000;
 }
-.blogpost{
+
+.blogpost {
     position: relative;
     width: 100%;
     margin-top: 30px;
     background: #fff;
 }
 
-.blogpost .imgBx{
+.blogpost .imgBx {
     height: 400px;
 }
-.blogpost .imgBx{
+
+.blogpost .imgBx {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.blogpost .content{
+
+.blogpost .content {
     padding: 15px;
 
 }
 
-.blogpost .content .content h1{
+.blogpost .content .content h1 {
     margin: 0;
     padding: 0 0 10px;
     font-weight: 600;
@@ -247,14 +254,15 @@ p {
 }
 
 .btnD2,
-.btnD2:hover{
+.btnD2:hover {
     background: #262626;
-    color:#fff;
+    color: #fff;
     border-radius: 30px;
     padding: 10px 20px;
     float: right;
 }
-.contacto{
+
+.contacto {
     position: relative;
     padding: 100px 0;
     background-image: url(images/contacto.jpg);
@@ -262,58 +270,157 @@ p {
     min-height: 100vh;
     background-color: #000;
 }
-.contacto form{
+
+.contacto form {
     position: relative;
     z-index: 1000;
 }
-.contacto .form-control{
+
+.contacto .form-control {
     background: transparent;
-    border-bottom: 2px solid rgba(255,255,255,.2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
     height: 50px;
     border-radius: 0;
     background: rgba(0, 0, 0, .6);
     color: #fff;
     font-size: 1.25rem;
 }
+
 .contacto.form-control:focus,
-.contacto.form-control:hover{
-    border:none;
-    border-bottom: 2px solid rgba(255, 255,255,1);
+.contacto.form-control:hover {
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
     box-shadow: none;
 }
-.contacto .textarea{
+
+.contacto .textarea {
     min-height: 100px;
 }
-.contacto label{
+
+.contacto label {
     color: #fff;
     font-size: 1.25rem;
 }
-footer{
+
+footer {
     background: #000;
     padding: 20px 0 0;
 }
 
-.sci{
+.sci {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.sci li{
+
+.sci li {
     list-style: none;
     margin: 0 20px;
 }
-.sci li a{
+
+.sci li a {
     color: #777;
     font-size: 2em;
-    transition: 0.5s;    
+    transition: 0.5s;
 }
+
 .sci li a:hover {
-    color:#fff;
+    color: #fff;
 }
-.cpryt{
+
+.cpryt {
     margin-top: 20px;
     text-align: center;
-    color:#777;
+    color: #777;
+}
+
+@media(max-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media(max-width: 992px) {
+    .navbar-light .navbar-toggler {
+        background: #fff;
+        border-radius: 0;
+    }
+
+    .banner {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+
+    .contentBox h1,
+    .sec2 h2 {
+        font-size: 2rem;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar-toggler.collapsed {
+        background: #fff;
+    }
+
+    .sec1 {
+        padding: 20px 0;
+    }
+
+    .headerText h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .blog {
+        padding: 20px 0;
+    }
+
+    .blogpost .imgBx {
+        height: 200px;
+    }
+    .blogpost .content {
+        color: #fff;
+
+    }
+
+    .contacto {
+        padding: 20px 0;
+    }
+
+    .contacto.form-control {
+        height: 40px;
+        border: 1px solid #fff;
+    }
+
+    .btnD1 {
+        padding: 10px 40px;
+        margin-top: 10px;
+    }
+
+    footer {
+        background: #000;
+        padding: 0px 0 20px;
+    }
+
+    .sci li {
+        list-style: none;
+        margin: 0 10px;
+    }
+
+    .sci li a {
+        color: #777;
+        font-size: 1.5rem;
+        transition: 0.5s;
+    }
+
+    .sec2 {
+        height: auto;
+        padding: 40px 0;
+    }
 }
